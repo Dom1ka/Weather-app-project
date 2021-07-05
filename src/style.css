@@ -1,0 +1,67 @@
+body {
+  background: linear-gradient(
+    109.6deg,
+    rgb(196, 197, 252) 11.2%,
+    rgb(150, 199, 253) 100.2%
+  );
+}
+.back-card {
+  margin: 0 13%;
+  background: radial-gradient(
+    465px at -15.1% -25%,
+    rgb(17, 130, 193) 0%,
+    rgb(67, 166, 238) 49%,
+    rgb(126, 203, 244) 90.2%
+  );
+}
+.back-card-body {
+  padding: 10px;
+  padding-top: 20px;
+  display: block;
+  margin: 0 8%;
+}
+#search-bar {
+  position: absolute;
+  right: 5%;
+}
+#search-city,
+#search-city-button,
+#my-location {
+  border: solid 0.5px;
+  border-radius: 8px;
+  border-color: gray;
+}
+.current-temperature {
+  font-size: 35px;
+}
+#celsium:hover,
+#fahrenheit:hover {
+  cursor: pointer;
+}
+
+/* elements with class CARD within element with class DAILY-FORECAST */
+.daily-forecast .card {
+  background: radial-gradient(
+    465px at -15.1% -25%,
+    rgb(17, 130, 193) 0%,
+    rgb(67, 166, 238) 49%,
+    rgb(126, 203, 244) 90.2%
+  );
+}
+.high-temperature,
+.low-temperature {
+  margin-bottom: 2px;
+}
+.high-temperature {
+  font-size: 14px;
+}
+.low-temperature {
+  color: gray;
+  font-size: 12px;
+}
+h1 {
+  color: brown;
+}
+.coder {
+  text-align: center;
+}

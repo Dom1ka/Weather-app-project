@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/33348d4835.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    <br />
+    <h1>Weather forecast</h1>
+    <br />
+    <div class="card back-card">
+      <div class="card-body back-card-body">
+        <form id="search-bar">
+          <input
+            type="search"
+            id="search-city"
+            placeholder="Type a city.."
+            autocomplete="off"
+          />
+          <input type="submit" id="search-city-button" value="Search" />
+        </form>
+        <button id="my-location">My location</button>
+        <br />
+        <br />
+        <br />
+        <div class="row todays-forecast">
+          <div class="col-3 current-forecast">
+            <div class="card-body">
+              <h4 class="card-title" id="city-location">London</h4>
+              <p class="card-text" id="real-time">Friday</p>
+              <img src="images/partly_cloudy.png" width="80" />
+            </div>
+          </div>
+          <div class="col-2 temperature">
+            <div class="card-body">
+              <strong class="current-temperature">14</strong>
+              <div class="current-temperature-all">
+                <i id="celsium">°C</i> |
+                <i id="fahrenheit">F</i>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 extra-col"></div>
+          <div class="col-3 extra-description">
+            <div class="card-body">
+              <!--<div class="col">Precipitation:</div>-->
+              <div class="col">Humidity:</div>
+              <div class="col">Wind:</div>
+            </div>
+          </div>
+          <div class="col-2 extra-values">
+            <div class="card-body">
+              <!--<div class="col" id="precipitation">0%</div>-->
+              <div class="col" id="humidity">16%</div>
+              <div class="col" id="wind">16 km/h</div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="row g-2 justify-content-center daily-forecast">
+          <div class="col box1">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Saturday</h5>
+                <p class="card-text text-center">
+                  <img src="images/partly_cloudy.png" alt="" />
+                </p>
+                <p class="text-center high-temperature"><strong>20°</strong></p>
+                <p class="text-center low-temperature">10°</p>
+              </div>
+            </div>
+          </div>
+          <div class="col box2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Sunday</h5>
+                <p class="card-text text-center">
+                  <img src="images/sunny.png" alt="" />
+                </p>
+                <p class="text-center high-temperature"><strong>20°</strong></p>
+                <p class="text-center low-temperature">10°</p>
+              </div>
+            </div>
+          </div>
+          <div class="col box3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Monday</h5>
+                <p class="card-text text-center">
+                  <img src="images/partly_cloudy.png" alt="" />
+                </p>
+                <p class="text-center high-temperature"><strong>20°</strong></p>
+                <p class="text-center low-temperature">10°</p>
+              </div>
+            </div>
+          </div>
+          <div class="col box4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Tuesday</h5>
+                <p class="card-text text-center">
+                  <img src="images/sunny.png" alt="" />
+                </p>
+                <p class="text-center high-temperature"><strong>20°</strong></p>
+                <p class="text-center low-temperature">10°</p>
+              </div>
+            </div>
+          </div>
+          <div class="col box5">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Wednesday</h5>
+                <p class="card-text text-center">
+                  <img src="images/sunny.png" alt="" />
+                </p>
+                <p class="text-center high-temperature"><strong>20°</strong></p>
+                <p class="text-center low-temperature">10°</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <p class="coder">
+      Coded by Dominika Sochurkova
+      <a href="https://www.instagram.com/dom.ika/"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </p>
+    <!-- https://www.instagram.com/dom.ika/ -->
+    <script src="src/index.js"></script>
+  </body>
+</html>
